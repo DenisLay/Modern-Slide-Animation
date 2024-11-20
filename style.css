@@ -128,3 +128,8 @@ input:checked+label .icon {
     width: 80px !important;
     height: 80px !important;
 }
+
+input:checked+.card:hover .icon {
+    scale: 4.5;
+    transform: translateY(-35%) translateX(35%);
+}
