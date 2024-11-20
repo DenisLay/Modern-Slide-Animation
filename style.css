@@ -65,10 +65,12 @@ body {
     color: white;
     border-radius: 50%;
     width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 15px;
+    transition: all 0.3s cubic-bezier(0.28, -0.03, 0, 0.99);
 }
 
 .card>.row>.description {
@@ -115,9 +117,14 @@ input:checked+label .description {
     transform: translateY(0) !important;*/
     transform: rotateX(0) !important;
     padding-left: 0 !important;
-    padding-top: 0 !important;
+    padding-top: 30px !important;
 }
 
 input:checked+label .description p {
     opacity: 1 !important;
+}
+
+input:checked+label .icon {
+    width: 80px !important;
+    height: 80px !important;
 }
